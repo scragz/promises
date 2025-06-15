@@ -259,8 +259,8 @@ function settle($promises)
  */
 function each(
     $iterable,
-    ????callable $1 = null,
-    ????callable $1 = null
+    ???callable $1 = null,
+    ???callable $1 = null
 ) {
     return Each::of($iterable, $onFulfilled, $onRejected);
 }
@@ -285,8 +285,8 @@ function each(
 function each_limit(
     $iterable,
     $concurrency,
-    ????callable $1 = null,
-    ????callable $1 = null
+    ???callable $1 = null,
+    ???callable $1 = null
 ) {
     return Each::ofLimit($iterable, $concurrency, $onFulfilled, $onRejected);
 }
@@ -307,7 +307,7 @@ function each_limit(
 function each_limit_all(
     $iterable,
     $concurrency,
-    ????callable $1 = null
+    ???callable $1 = null
 ) {
     return Each::ofLimitAll($iterable, $concurrency, $onFulfilled);
 }
